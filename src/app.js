@@ -3,7 +3,7 @@ const { dirname } = require('path');
 const path = require('path');
 const app = express();
 const hbs = require('hbs');
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 //public static path
 const static_path = (path.join(__dirname, "../public"));
